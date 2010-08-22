@@ -90,7 +90,6 @@ namespace CreactiveFSMonitor
 
             if (propertyWindow.ShowDialog() == DialogResult.OK)
             {
-                // TODO id/passwd가 변경되었음을  status bar에 표시하도록 함
                 this.connectionInfo.server = propertyWindow.Server;
                 this.connectionInfo.id = propertyWindow.Id;
                 this.connectionInfo.password = propertyWindow.Password;
