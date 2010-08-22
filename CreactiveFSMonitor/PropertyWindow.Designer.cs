@@ -34,27 +34,29 @@
             this.propertyPasswordLabel = new System.Windows.Forms.Label();
             this.propertySubmitButton = new System.Windows.Forms.Button();
             this.propertyCancelButton = new System.Windows.Forms.Button();
+            this.serverTextBox = new System.Windows.Forms.TextBox();
+            this.propertyServerLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // idTextBox
             // 
-            this.idTextBox.Location = new System.Drawing.Point(97, 12);
+            this.idTextBox.Location = new System.Drawing.Point(96, 38);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 21);
+            this.idTextBox.Size = new System.Drawing.Size(226, 21);
             this.idTextBox.TabIndex = 0;
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(97, 48);
+            this.passwordTextBox.Location = new System.Drawing.Point(96, 65);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
-            this.passwordTextBox.Size = new System.Drawing.Size(100, 21);
+            this.passwordTextBox.Size = new System.Drawing.Size(226, 21);
             this.passwordTextBox.TabIndex = 1;
             // 
             // propertyIdLabel
             // 
             this.propertyIdLabel.AutoSize = true;
-            this.propertyIdLabel.Location = new System.Drawing.Point(18, 15);
+            this.propertyIdLabel.Location = new System.Drawing.Point(17, 41);
             this.propertyIdLabel.Name = "propertyIdLabel";
             this.propertyIdLabel.Size = new System.Drawing.Size(16, 12);
             this.propertyIdLabel.TabIndex = 2;
@@ -63,7 +65,7 @@
             // propertyPasswordLabel
             // 
             this.propertyPasswordLabel.AutoSize = true;
-            this.propertyPasswordLabel.Location = new System.Drawing.Point(18, 51);
+            this.propertyPasswordLabel.Location = new System.Drawing.Point(17, 68);
             this.propertyPasswordLabel.Name = "propertyPasswordLabel";
             this.propertyPasswordLabel.Size = new System.Drawing.Size(62, 12);
             this.propertyPasswordLabel.TabIndex = 3;
@@ -71,9 +73,9 @@
             // 
             // propertySubmitButton
             // 
-            this.propertySubmitButton.Location = new System.Drawing.Point(90, 85);
+            this.propertySubmitButton.Location = new System.Drawing.Point(175, 92);
             this.propertySubmitButton.Name = "propertySubmitButton";
-            this.propertySubmitButton.Size = new System.Drawing.Size(107, 48);
+            this.propertySubmitButton.Size = new System.Drawing.Size(147, 48);
             this.propertySubmitButton.TabIndex = 4;
             this.propertySubmitButton.Text = "Submit";
             this.propertySubmitButton.UseVisualStyleBackColor = true;
@@ -81,20 +83,38 @@
             // 
             // propertyCancelButton
             // 
-            this.propertyCancelButton.Location = new System.Drawing.Point(20, 85);
+            this.propertyCancelButton.Location = new System.Drawing.Point(12, 92);
             this.propertyCancelButton.Name = "propertyCancelButton";
-            this.propertyCancelButton.Size = new System.Drawing.Size(53, 47);
+            this.propertyCancelButton.Size = new System.Drawing.Size(143, 48);
             this.propertyCancelButton.TabIndex = 5;
             this.propertyCancelButton.Text = "Cancel";
             this.propertyCancelButton.UseVisualStyleBackColor = true;
             this.propertyCancelButton.Click += new System.EventHandler(this.propertyCancelButton_Click);
+            // 
+            // serverTextBox
+            // 
+            this.serverTextBox.Location = new System.Drawing.Point(96, 11);
+            this.serverTextBox.Name = "serverTextBox";
+            this.serverTextBox.Size = new System.Drawing.Size(226, 21);
+            this.serverTextBox.TabIndex = 6;
+            // 
+            // propertyServerLabel
+            // 
+            this.propertyServerLabel.AutoSize = true;
+            this.propertyServerLabel.Location = new System.Drawing.Point(17, 14);
+            this.propertyServerLabel.Name = "propertyServerLabel";
+            this.propertyServerLabel.Size = new System.Drawing.Size(41, 12);
+            this.propertyServerLabel.TabIndex = 7;
+            this.propertyServerLabel.Text = "Server";
             // 
             // PropertyWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(216, 145);
+            this.ClientSize = new System.Drawing.Size(334, 162);
+            this.Controls.Add(this.propertyServerLabel);
+            this.Controls.Add(this.serverTextBox);
             this.Controls.Add(this.propertyCancelButton);
             this.Controls.Add(this.propertySubmitButton);
             this.Controls.Add(this.propertyPasswordLabel);
@@ -102,10 +122,11 @@
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.idTextBox);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(232, 183);
+            this.MaximumSize = new System.Drawing.Size(350, 200);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(232, 183);
+            this.MinimumSize = new System.Drawing.Size(350, 200);
             this.Name = "PropertyWindow";
+            this.ShowInTaskbar = false;
             this.Text = "Property";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,5 +141,7 @@
         private System.Windows.Forms.Label propertyPasswordLabel;
         private System.Windows.Forms.Button propertySubmitButton;
         private System.Windows.Forms.Button propertyCancelButton;
+        private System.Windows.Forms.TextBox serverTextBox;
+        private System.Windows.Forms.Label propertyServerLabel;
     }
 }

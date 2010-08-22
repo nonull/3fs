@@ -79,6 +79,7 @@
             this.startOrStopButton.TabIndex = 1;
             this.startOrStopButton.Text = "start";
             this.startOrStopButton.UseVisualStyleBackColor = true;
+            this.startOrStopButton.Click += new System.EventHandler(this.startOrStopButton_Click);
             // 
             // rootDirectoryTextBox
             // 

@@ -75,11 +75,41 @@ namespace CreactiveFSMonitor
         private FileStream logFile;
         private String logFilePath;
 
+        private class ConnectionInfo
+        {
+            public String server;
+            public String id;
+            public String password;
+        }
+
+        private ConnectionInfo connectionInfo = new ConnectionInfo();
+
         private void propertyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PropertyWindow propertyWindow = new PropertyWindow();
 
-            propertyWindow.ShowDialog();
+            if (propertyWindow.ShowDialog() == DialogResult.OK)
+            {
+                // TODO id/passwd가 변경되었음을  status bar에 표시하도록 함
+                this.connectionInfo.server = propertyWindow.Server;
+                this.connectionInfo.id = propertyWindow.Id;
+                this.connectionInfo.password = propertyWindow.Password;
+            }
+
+        }
+
+        private void startOrStopButton_Click(object sender, EventArgs e)
+        {
+            string proto = GetProtocol();
+            SshTransferProtocolBase sshCp;
+
+            if (proto.Equals("scp"))
+                sshCp = new Scp(this.connectionInfo.server, this.connectionInfo.id);
+            else
+                sshCp = new Sftp(this.connectionInfo.server, this.connectionInfo.id);
+
+            sshCp.Password = this.connectionInfo.password;
+
         }
 
     }

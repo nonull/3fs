@@ -18,6 +18,7 @@ namespace CreactiveFSMonitor
 
         private String id;
         private String password;
+        private String server;
 
         public string Id
         {
@@ -35,6 +36,14 @@ namespace CreactiveFSMonitor
             }
         }
 
+        public string Server
+        {
+            get
+            {
+                return server;
+            }
+        }
+
         private void propertyCancelButton_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -42,6 +51,7 @@ namespace CreactiveFSMonitor
 
         private void propertySubmitButton_Click(object sender, EventArgs e)
         {
+            this.server = this.serverTextBox.Text;
             this.id = this.idTextBox.Text;
             this.password = this.passwordTextBox.Text;
 
