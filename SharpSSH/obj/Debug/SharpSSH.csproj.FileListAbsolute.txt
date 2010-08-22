@@ -1,0 +1,7 @@
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\bin\Debug\Tamir.SharpSSH.dll
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\bin\Debug\Tamir.SharpSSH.pdb
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\SharpSSH\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\SharpSSH\obj\Debug\Tamir.SharpSsh.jsch.examples.InputForm.resources
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\SharpSSH\obj\Debug\SharpSSH.csproj.GenerateResource.Cache
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\SharpSSH\obj\Debug\Tamir.SharpSSH.dll
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\SharpSSH\obj\Debug\Tamir.SharpSSH.pdb

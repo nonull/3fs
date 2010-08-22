@@ -1,0 +1,9 @@
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\CreactiveFSMonitor\bin\Debug\CreactiveFSMonitor.exe
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\CreactiveFSMonitor\bin\Debug\CreactiveFSMonitor.pdb
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\CreactiveFSMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\CreactiveFSMonitor\obj\Debug\CreactiveFSMonitor.MonitorWindow.resources
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\CreactiveFSMonitor\obj\Debug\CreactiveFSMonitor.Properties.Resources.resources
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\CreactiveFSMonitor\obj\Debug\CreactiveFSMonitor.csproj.GenerateResource.Cache
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\CreactiveFSMonitor\obj\Debug\CreactiveFSMonitor.exe
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\CreactiveFSMonitor\obj\Debug\CreactiveFSMonitor.pdb
+C:\Users\nonull\Documents\Visual Studio 2008\Projects\CreactiveFSMonitor\CreactiveFSMonitor\obj\Debug\CreactiveFSMonitor.PropertyWindow.resources
