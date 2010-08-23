@@ -99,6 +99,7 @@ namespace CreactiveFSMonitor
 
         private void startOrStopButton_Click(object sender, EventArgs e)
         {
+            /*
             string proto = GetProtocol();
             SshTransferProtocolBase sshCp;
 
@@ -108,6 +109,8 @@ namespace CreactiveFSMonitor
                 sshCp = new Sftp(this.connectionInfo.server, this.connectionInfo.id);
 
             sshCp.Password = this.connectionInfo.password;
+            
+             */
 
         }
 
