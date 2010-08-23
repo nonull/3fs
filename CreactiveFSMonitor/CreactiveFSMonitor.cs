@@ -29,6 +29,7 @@ namespace CreactiveFSMonitor
             }
         }
 
+        #region UI binding fuctions
         private void rootDirectoryTextBox_Click(object sender, EventArgs e)
         {
             if (this.folderBrowserDialog.ShowDialog() == DialogResult.OK)
@@ -41,6 +42,58 @@ namespace CreactiveFSMonitor
             }
 
         }
+
+        private void propertyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PropertyWindow propertyWindow = new PropertyWindow();
+
+            if (propertyWindow.ShowDialog() == DialogResult.OK)
+            {
+                this.connectionInfo.server = propertyWindow.Server;
+                this.connectionInfo.id = propertyWindow.Id;
+                this.connectionInfo.password = propertyWindow.Password;
+                this.connectionInfo.path = propertyWindow.Path;
+            }
+        }
+
+        private void startOrStopButton_Click(object sender, EventArgs e)
+        {
+
+            if (this.startOrStopButton.Text == "start")
+            {
+                if (startMonitoring() == true)
+                {
+                    this.startOrStopButton.Text = "stop";
+                }
+            }
+            else
+            {
+                stopMonitoring();
+                this.startOrStopButton.Text = "start";
+            }
+
+
+
+
+            /*
+            string proto = "scp";
+            SshTransferProtocolBase sshCp;
+
+            if (proto.Equals("scp"))
+            {
+                sshCp = new Scp(this.connectionInfo.server, this.connectionInfo.id);
+            }
+            else
+            {
+                sshCp = new Sftp(this.connectionInfo.server, this.connectionInfo.id);
+            }
+
+            sshCp.Password = this.connectionInfo.password;
+            */
+        }
+
+        #endregion
+
 
         private bool startMonitoring()
         {
@@ -121,54 +174,7 @@ namespace CreactiveFSMonitor
 
 
 
-        private void propertyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PropertyWindow propertyWindow = new PropertyWindow();
 
-            if (propertyWindow.ShowDialog() == DialogResult.OK)
-            {
-                this.connectionInfo.server = propertyWindow.Server;
-                this.connectionInfo.id = propertyWindow.Id;
-                this.connectionInfo.password = propertyWindow.Password;
-                this.connectionInfo.path = propertyWindow.Path;
-            }
-        }
-
-        private void startOrStopButton_Click(object sender, EventArgs e)
-        {
-
-            if (this.startOrStopButton.Text == "start")
-            {
-                if (startMonitoring() == true)
-                {
-                    this.startOrStopButton.Text = "stop";
-                }
-            }
-            else
-            {
-                stopMonitoring();
-                this.startOrStopButton.Text = "start";
-            }
-
-            
-
-
-            /*
-            string proto = "scp";
-            SshTransferProtocolBase sshCp;
-
-            if (proto.Equals("scp"))
-            {
-                sshCp = new Scp(this.connectionInfo.server, this.connectionInfo.id);
-            }
-            else
-            {
-                sshCp = new Sftp(this.connectionInfo.server, this.connectionInfo.id);
-            }
-
-            sshCp.Password = this.connectionInfo.password;
-            */
-        }
 
         #region Inner Structure
 
