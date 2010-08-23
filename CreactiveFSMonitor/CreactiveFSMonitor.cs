@@ -77,10 +77,15 @@ namespace CreactiveFSMonitor
                 Util.FileType fileType = Util.getFileType(e.FullPath);
 
           
-                String log = e.ChangeType.ToString() + ":" + fileType.ToString() + ":" + e.FullPath.Substring(this.fileSystemWatcher.Path.Length) + "\r\n";
+                String log = e.ChangeType.ToString() // CREATED, CHANGED, DELETED 
+                    + ":" 
+                    + fileType.ToString() // FILE, DIRECTORY, NOT_EXIST
+                    + ":" 
+                    + e.FullPath.Substring(this.fileSystemWatcher.Path.Length) // relative path
+                    + "\r\n";
+
                 byte[] logBytes = System.Text.Encoding.Default.GetBytes(log);
                 this.logFile.Write(logBytes, 0, logBytes.Length);
-                //Console.WriteLine(e.FullPath + ":" + e.ChangeType.ToString());
                 this.logFile.Flush();
                 
             }
@@ -93,28 +98,24 @@ namespace CreactiveFSMonitor
                 Util.FileType fileType = Util.getFileType(e.FullPath);
 
 
-                String log = e.ChangeType.ToString() + ":" + fileType.ToString() + ":" + e.OldFullPath.Substring(this.fileSystemWatcher.Path.Length) + ":" + e.FullPath.Substring(this.fileSystemWatcher.Path.Length) + "\r\n";
+                String log = e.ChangeType.ToString() // RENAMED
+                    + ":" 
+                    + fileType.ToString() // FILE, DIRECTORY, NOT_EXIST
+                    + ":" 
+                    + e.OldFullPath.Substring(this.fileSystemWatcher.Path.Length) // old relative path
+                    + ":" 
+                    + e.FullPath.Substring(this.fileSystemWatcher.Path.Length) // new relative path
+                    + "\r\n";
+
                 byte[] logBytes = System.Text.Encoding.Default.GetBytes(log);
                 this.logFile.Write(logBytes, 0, logBytes.Length);
-                //Console.WriteLine(e.FullPath + ":" + e.ChangeType.ToString());
                 this.logFile.Flush();
 
             }
         }
 
 
-        private FileStream logFile;
-        private String logFilePath;
 
-        private class ConnectionInfo
-        {
-            public String server;
-            public String path;
-            public String id;
-            public String password;
-        }
-
-        private ConnectionInfo connectionInfo = new ConnectionInfo();
 
         private void propertyToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -164,6 +165,31 @@ namespace CreactiveFSMonitor
             sshCp.Password = this.connectionInfo.password;
             */
         }
+
+        #region Inner Structure
+
+        private class ConnectionInfo
+        {
+            public String server;
+            public String path;
+            public String id;
+            public String password;
+        }
+
+        #endregion
+
+
+
+        #region Definition of Variable
+
+        private FileStream logFile;
+        private String logFilePath;
+
+        private ConnectionInfo connectionInfo = new ConnectionInfo();
+
+        #endregion
+
+        
 
     }
 }
