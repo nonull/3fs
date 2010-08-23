@@ -52,7 +52,7 @@ namespace CreactiveFSMonitor
             try
             {
                 this.fileSystemWatcher.EnableRaisingEvents = true;
-                this.logFilePath = this.fileSystemWatcher.Path + "\\.clist";
+                this.logFilePath = getLogFilePath();
                 this.logFile = File.Open(this.logFilePath, FileMode.Append, FileAccess.Write, FileShare.Read);
 
                 return true;
@@ -68,6 +68,10 @@ namespace CreactiveFSMonitor
             this.fileSystemWatcher.EnableRaisingEvents = false;
         }
 
+        private String getLogFilePath()
+        {
+            return this.fileSystemWatcher.Path + "\\.clist";
+        }
 
 
         private void OnFileSystemChanged(object sender, FileSystemEventArgs e)
