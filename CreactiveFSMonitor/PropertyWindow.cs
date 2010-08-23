@@ -19,6 +19,7 @@ namespace CreactiveFSMonitor
         private String id;
         private String password;
         private String server;
+        private String path;
 
         public string Id
         {
@@ -44,6 +45,14 @@ namespace CreactiveFSMonitor
             }
         }
 
+        public string Path
+        {
+            get
+            {
+                return path;
+            }
+        }
+
         private void propertyCancelButton_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -52,6 +61,7 @@ namespace CreactiveFSMonitor
         private void propertySubmitButton_Click(object sender, EventArgs e)
         {
             this.server = this.serverTextBox.Text;
+            this.path = this.remotePathTextBox.Text;
             this.id = this.idTextBox.Text;
             this.password = this.passwordTextBox.Text;
 
