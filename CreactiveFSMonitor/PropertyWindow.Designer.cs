@@ -49,7 +49,7 @@
             this.idTextBox.Location = new System.Drawing.Point(95, 20);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(209, 21);
-            this.idTextBox.TabIndex = 0;
+            this.idTextBox.TabIndex = 3;
             // 
             // passwordTextBox
             // 
@@ -57,7 +57,7 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(209, 21);
-            this.passwordTextBox.TabIndex = 1;
+            this.passwordTextBox.TabIndex = 4;
             // 
             // propertyIdLabel
             // 
@@ -82,7 +82,7 @@
             this.propertySubmitButton.Location = new System.Drawing.Point(175, 182);
             this.propertySubmitButton.Name = "propertySubmitButton";
             this.propertySubmitButton.Size = new System.Drawing.Size(147, 48);
-            this.propertySubmitButton.TabIndex = 4;
+            this.propertySubmitButton.TabIndex = 5;
             this.propertySubmitButton.Text = "Submit";
             this.propertySubmitButton.UseVisualStyleBackColor = true;
             this.propertySubmitButton.Click += new System.EventHandler(this.propertySubmitButton_Click);
@@ -92,7 +92,7 @@
             this.propertyCancelButton.Location = new System.Drawing.Point(12, 182);
             this.propertyCancelButton.Name = "propertyCancelButton";
             this.propertyCancelButton.Size = new System.Drawing.Size(143, 48);
-            this.propertyCancelButton.TabIndex = 5;
+            this.propertyCancelButton.TabIndex = 6;
             this.propertyCancelButton.Text = "Cancel";
             this.propertyCancelButton.UseVisualStyleBackColor = true;
             this.propertyCancelButton.Click += new System.EventHandler(this.propertyCancelButton_Click);
@@ -102,7 +102,7 @@
             this.serverTextBox.Location = new System.Drawing.Point(95, 20);
             this.serverTextBox.Name = "serverTextBox";
             this.serverTextBox.Size = new System.Drawing.Size(209, 21);
-            this.serverTextBox.TabIndex = 6;
+            this.serverTextBox.TabIndex = 1;
             // 
             // propertyServerLabel
             // 
@@ -118,7 +118,7 @@
             this.remotePathTextBox.Location = new System.Drawing.Point(95, 47);
             this.remotePathTextBox.Name = "remotePathTextBox";
             this.remotePathTextBox.Size = new System.Drawing.Size(209, 21);
-            this.remotePathTextBox.TabIndex = 8;
+            this.remotePathTextBox.TabIndex = 2;
             // 
             // remotePathLabel
             // 
@@ -138,7 +138,7 @@
             this.serverInputGroupBox.Location = new System.Drawing.Point(12, 5);
             this.serverInputGroupBox.Name = "serverInputGroupBox";
             this.serverInputGroupBox.Size = new System.Drawing.Size(310, 73);
-            this.serverInputGroupBox.TabIndex = 10;
+            this.serverInputGroupBox.TabIndex = 0;
             this.serverInputGroupBox.TabStop = false;
             this.serverInputGroupBox.Text = "Server Address";
             // 
@@ -151,7 +151,7 @@
             this.loginInputGroupBox.Location = new System.Drawing.Point(12, 87);
             this.loginInputGroupBox.Name = "loginInputGroupBox";
             this.loginInputGroupBox.Size = new System.Drawing.Size(310, 80);
-            this.loginInputGroupBox.TabIndex = 10;
+            this.loginInputGroupBox.TabIndex = 1;
             this.loginInputGroupBox.TabStop = false;
             this.loginInputGroupBox.Text = "Login";
             // 
