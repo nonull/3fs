@@ -74,9 +74,9 @@ namespace CreactiveFSMonitor
 
 
 
-
             /*
-            string proto = "scp";
+            
+            string proto = "sftp";
             SshTransferProtocolBase sshCp;
 
             if (proto.Equals("scp"))
@@ -89,7 +89,13 @@ namespace CreactiveFSMonitor
             }
 
             sshCp.Password = this.connectionInfo.password;
-            */
+
+            sshCp.Connect();
+            sshCp.Put("C:\\work\\test\\text.txt", "temp/a.txt");
+            
+            sshCp.Close();
+             */ 
+            
         }
 
         #endregion
@@ -170,10 +176,6 @@ namespace CreactiveFSMonitor
 
             }
         }
-
-
-
-
 
 
         #region Inner Structure

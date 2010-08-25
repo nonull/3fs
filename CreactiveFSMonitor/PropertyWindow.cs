@@ -21,7 +21,7 @@ namespace CreactiveFSMonitor
         private String server;
         private String path;
 
-        public string Id
+        public String Id
         {
             get
             {
@@ -29,7 +29,7 @@ namespace CreactiveFSMonitor
             }
         }
 
-        public string Password
+        public String Password
         {
             get
             {
@@ -37,7 +37,7 @@ namespace CreactiveFSMonitor
             }
         }
 
-        public string Server
+        public String Server
         {
             get
             {
@@ -45,7 +45,7 @@ namespace CreactiveFSMonitor
             }
         }
 
-        public string Path
+        public String Path
         {
             get
             {
@@ -65,6 +65,7 @@ namespace CreactiveFSMonitor
             this.id = this.idTextBox.Text;
             this.password = this.passwordTextBox.Text;
 
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
