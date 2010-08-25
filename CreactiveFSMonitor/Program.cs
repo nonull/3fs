@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace CreactiveFSMonitor
+namespace Creactive.Windows._3fs
 {
     static class Program
     {

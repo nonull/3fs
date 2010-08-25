@@ -1,4 +1,4 @@
-﻿namespace CreactiveFSMonitor
+﻿namespace Creactive.Windows._3fs
 {
     partial class MonitorWindow
     {

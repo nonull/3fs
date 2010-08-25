@@ -8,7 +8,7 @@
     <ProjectGuid>{C03F9EDB-21C7-4DEA-8890-C064F75CB04E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CreactiveFSMonitor</RootNamespace>
+    <RootNamespace>Creactive.Windows._3fs</RootNamespace>
     <AssemblyName>CreactiveFSMonitor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -48,16 +48,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreactiveFSMonitor.cs">
+    <Compile Include="3FSMonitorWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreactiveFSMonitor.Designer.cs">
-      <DependentUpon>CreactiveFSMonitor.cs</DependentUpon>
+    <Compile Include="3FSMonitorWindow.Designer.cs">
+      <DependentUpon>3FSMonitorWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CreactiveFSMonitor.resx">
-      <DependentUpon>CreactiveFSMonitor.cs</DependentUpon>
+    <EmbeddedResource Include="3FSMonitorWindow.resx">
+      <DependentUpon>3FSMonitorWindow.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -72,6 +72,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
