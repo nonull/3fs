@@ -1,4 +1,4 @@
-﻿namespace CreactiveFSMonitor
+﻿namespace Creactive.Windows._3fs
 {
     partial class PropertyWindow
     {
@@ -7,6 +7,7 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CreactiveFSMonitor
+namespace Creactive.Windows._3fs
 {
     public partial class PropertyWindow : Form
     {

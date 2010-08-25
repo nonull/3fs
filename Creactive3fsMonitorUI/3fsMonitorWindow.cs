@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.IO;
 using Tamir.SharpSsh;
 
-namespace CreactiveFSMonitor
+namespace Creactive.Windows._3fs
 {
     public partial class MonitorWindow : Form
     {
